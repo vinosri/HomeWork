@@ -1,10 +1,10 @@
 require 'sinatra'
 
-#$visitor = 0
+$i= 0
 get '/' do
   	 time = Time.now
-  	 #$visitor +=1
-  	 'Hello world! The current time is ' +time.strftime('%H:%M')+ ' GMT.' 'Hello Team! Your time is ' +time.strftime('%H:%M')+  '.'
+  	 $i +=1
+  	 'Hello world! The current time is ' +time.strftime('%H:%M')+ 'Hello Team! Your time is ' ' GMT.' +time.strftime('%H:%M')+ ',' $i '.'
  end
 
 
